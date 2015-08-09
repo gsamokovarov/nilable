@@ -1,4 +1,4 @@
-# Nilable
+# Nilable [![Build Status](https://travis-ci.org/gsamokovarov/nilable.svg)](https://travis-ci.org/gsamokovarov/nilable)
 
 Nilable object is a tool to handle nil invocations.
 
