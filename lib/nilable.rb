@@ -2,12 +2,12 @@ require 'nilable/kernel'
 
 # Nilable object is a tool to handle nil invocations.
 #
-# Any Nilable object wraps a single value object and proxy method
-# invocations to it. In turn, every method result is wrapped in an Nilable
-# object.
+# Any nilable object wraps a single value object and proxy method invocations
+# to it. In turn, every method result is wrapped in a nilable object.
 #
-# That way, if somewhere along the call chain, method result is `nil`, no
-# `NoMethodError` will be raised. It acts as a black hole object.
+# If somewhere along the call chain, a method result is `nil`, no
+# `NoMethodError` will be raised and you can keep on chaining method calls. It
+# acts as a black hole object.
 class Nilable < BasicObject
   attr_reader :value
 
